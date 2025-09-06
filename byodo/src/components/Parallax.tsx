@@ -3,7 +3,7 @@
 import { PropsWithChildren, useEffect, useRef } from "react";
 
 type ParallaxProps = PropsWithChildren<{
-  speed?: number; // 0 = no movement, 0.2 subtle, 0.5 stronger
+  speed?: number;
   className?: string;
 }>;
 
@@ -23,7 +23,6 @@ export default function Parallax({ speed = 0.25, className, children }: Parallax
     const update = () => {
       ticking = false;
       const rect = host.getBoundingClientRect();
-      // Translate proportionally to the element's distance from the viewport top
       const y = rect.top * effectiveSpeed;
       inner.style.transform = `translate3d(0, ${y.toFixed(2)}px, 0)`;
     };
@@ -47,7 +46,6 @@ export default function Parallax({ speed = 0.25, className, children }: Parallax
   return (
     <div ref={hostRef} className={className} aria-hidden>
       <div ref={innerRef} className="h-full w-full will-change-transform transform-gpu">
-        {/* Overscan wrapper to prevent edges from showing during translate */}
         <div className="h-full w-full scale-[1.15] origin-center">
           {children}
         </div>

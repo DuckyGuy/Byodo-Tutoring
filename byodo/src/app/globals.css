@@ -3,13 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #111111;
-  /* Brand red based on logo */
-  --brand: #c81e1e; /* 600-ish red */
+  --brand: #c81e1e;
   --brand-700: #b91c1c;
   --brand-800: #991b1b;
 }
 
-/* stylelint-disable-next-line at-rule-no-unknown */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -40,7 +38,6 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Subtle background pattern for light theme */
 .bg-grid-slate-100 {
   background-image:
     linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px),
@@ -48,7 +45,6 @@ html:focus-within {
   background-size: 24px 24px;
 }
 
-/* Optional: soft radial vignette to add depth without hurting readability */
 .bg-soft-vignette {
   background-image: radial-gradient(1200px 400px at 50% -200px, rgba(2,6,23,0.06), transparent),
                     radial-gradient(1200px 400px at 50% 120%, rgba(2,6,23,0.05), transparent);
