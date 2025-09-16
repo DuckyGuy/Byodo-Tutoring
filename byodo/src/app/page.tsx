@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Reveal from "@/components/Reveal";
 import Parallax from "@/components/Parallax";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
@@ -9,24 +10,7 @@ export default function Home() {
         Skip to content
       </a>
 
-      <header className="sticky top-0 z-40 backdrop-blur bg-white/80 supports-[backdrop-filter]:bg-white/70 border-b border-slate-200">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Image src="/Byodo-Logo-1.webp" alt="Byodo Tutoring" width={150} height={40} priority />
-          </div>
-          <nav aria-label="Primary" className="hidden md:block">
-            <ul className="flex items-center gap-6 text-sm">
-              <li><a className="text-brand hover:text-brand-800 font-medium" href="#home">Home</a></li>
-              <li><a className="text-brand hover:text-brand-800 font-medium" href="#teachers">Our Teachers</a></li>
-              <li><a className="text-brand hover:text-brand-800 font-medium" href="#about">About</a></li>
-              <li><a className="text-brand hover:text-brand-800 font-medium" href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-          <a href="#signup" className="inline-flex items-center justify-center rounded-full bg-brand text-white px-4 h-10 text-sm font-medium hover:bg-brand-700">
-            Find a Tutor
-          </a>
-        </div>
-      </header>
+  <Header />
 
       <section id="home" className="relative isolate min-h-[70vh] sm:min-h-[75vh] lg:min-h-[80vh] overflow-hidden py-16 sm:py-24">
       <Parallax speed={0.15} className="absolute -inset-y-12 inset-x-0">
@@ -161,8 +145,8 @@ export default function Home() {
             </div>
             <Reveal className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border border-slate-200 bg-white">
               <Image
-        src="https://images.unsplash.com/photo-1519452575417-564c1401ecc0?q=80&w=1600&auto=format&fit=crop"
-        alt="Tutor helping student with homework at a table"
+        src="/image1.jpg"
+        alt="Empty lecture hall with wooden chairs"
                 fill
                 className="object-cover"
               />
