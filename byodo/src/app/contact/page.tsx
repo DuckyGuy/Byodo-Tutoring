@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
+import Link from "next/link";
 import Reveal from "../../components/Reveal";
 
 export default function ContactPage() {
@@ -112,7 +113,7 @@ export default function ContactPage() {
               Contact Us
             </h1>
             <p className="mt-3 text-base sm:text-lg text-white/80">
-              Reach out and we'll match you with the right tutor&mdash;fast.
+              Reach out and we&apos;ll match you with the right tutor&mdash;fast.
             </p>
           </div>
         </div>
@@ -126,7 +127,7 @@ export default function ContactPage() {
                 Tell us what you need
               </h2>
               <p className="mt-2 text-slate-700">
-                Share a few details, and we'll get back within 24 hours.
+                Share a few details, and we&apos;ll get back within 24 hours.
               </p>
 
               <Reveal className="mt-6 rounded-2xl border border-slate-200 bg-white p-6">
@@ -379,8 +380,8 @@ export default function ContactPage() {
               <Reveal className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="text-base font-semibold text-slate-900">What happens next</h3>
                 <ol className="mt-3 list-decimal pl-5 text-sm text-slate-700 space-y-1">
-                  <li>We'll reply within 24 hours.</li>
-                  <li>We'll suggest a tutor and set up a free Zoom call.</li>
+                  <li>We&apos;ll reply within 24 hours.</li>
+                  <li>We&apos;ll suggest a tutor and set up a free Zoom call.</li>
                   <li>Start 1-on-1 lessons&mdash;completely free.</li>
                 </ol>
               </Reveal>
@@ -394,7 +395,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <div className="font-medium">Can I choose a specific tutor?</div>
-                    <p>Yes&mdash;add their name above. If you're not sure, we'll match you.</p>
+                    <p>Yes&mdash;add their name above. If you&apos;re not sure, we&apos;ll match you.</p>
                   </div>
                   <div>
                     <div className="font-medium">How soon can we start?</div>
@@ -407,12 +408,12 @@ export default function ContactPage() {
 
           <div className="mt-12 text-center">
             <p className="text-slate-700">Choose a teacher for 1-on-1 lessons</p>
-            <a
+            <Link
               href="/#signup"
               className="mt-4 inline-flex items-center justify-center rounded-full bg-brand text-white px-5 h-11 text-sm font-semibold hover:bg-brand-700"
             >
               Start learning with Byodo today!
-            </a>
+            </Link>
           </div>
         </section>
       </main>
@@ -422,18 +423,18 @@ export default function ContactPage() {
           <div>
             <h3 className="font-semibold text-slate-900">About Us</h3>
             <ul className="mt-3 space-y-2">
-              <li><a href="/#how" className="hover:text-brand">How it Works</a></li>
-              <li><a href="/#about" className="hover:text-brand">Education Partners</a></li>
-              <li><a href="/about" className="hover:text-brand">About</a></li>
+              <li><Link href="/#how" className="hover:text-brand">How it Works</Link></li>
+              <li><Link href="/#about" className="hover:text-brand">Education Partners</Link></li>
+              <li><Link href="/about" className="hover:text-brand">About</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="font-semibold text-slate-900">Teachers</h3>
             <ul className="mt-3 space-y-2">
-              <li><a href="/our-teachers" className="hover:text-brand">Math Teachers</a></li>
-              <li><a href="/our-teachers" className="hover:text-brand">English Teachers</a></li>
-              <li><a href="/our-teachers" className="hover:text-brand">Science Teachers</a></li>
-              <li><a href="/our-teachers" className="hover:text-brand">History Teachers</a></li>
+              <li><Link href="/our-teachers" className="hover:text-brand">Math Teachers</Link></li>
+              <li><Link href="/our-teachers" className="hover:text-brand">English Teachers</Link></li>
+              <li><Link href="/our-teachers" className="hover:text-brand">Science Teachers</Link></li>
+              <li><Link href="/our-teachers" className="hover:text-brand">History Teachers</Link></li>
             </ul>
           </div>
           <div>

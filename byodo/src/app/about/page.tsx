@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Reveal from "../../components/Reveal";
 import Header from "@/components/Header";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -118,12 +119,12 @@ export default function AboutPage() {
 
           <div className="mt-12 text-center">
             <p className="text-slate-700">Choose a teacher for 1-on-1 lessons</p>
-            <a
+            <Link
               href="/#signup"
               className="mt-4 inline-flex items-center justify-center rounded-full bg-brand text-white px-5 h-11 text-sm font-semibold hover:bg-brand-700"
             >
               Start learning with Byodo today!
-            </a>
+            </Link>
           </div>
         </section>
       </main>
@@ -133,18 +134,18 @@ export default function AboutPage() {
           <div>
             <h3 className="font-semibold text-slate-900">About Us</h3>
             <ul className="mt-3 space-y-2">
-              <li><a href="/#how" className="hover:text-brand">How it Works</a></li>
-              <li><a href="/#about" className="hover:text-brand">Education Partners</a></li>
-              <li><a href="/about" className="hover:text-brand">About</a></li>
+              <li><Link href="/#how" className="hover:text-brand">How it Works</Link></li>
+              <li><Link href="/#about" className="hover:text-brand">Education Partners</Link></li>
+              <li><Link href="/about" className="hover:text-brand">About</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="font-semibold text-slate-900">Teachers</h3>
             <ul className="mt-3 space-y-2">
-              <li><a href="/our-teachers" className="hover:text-brand">Math Teachers</a></li>
-              <li><a href="/our-teachers" className="hover:text-brand">English Teachers</a></li>
-              <li><a href="/our-teachers" className="hover:text-brand">Science Teachers</a></li>
-              <li><a href="/our-teachers" className="hover:text-brand">History Teachers</a></li>
+              <li><Link href="/our-teachers" className="hover:text-brand">Math Teachers</Link></li>
+              <li><Link href="/our-teachers" className="hover:text-brand">English Teachers</Link></li>
+              <li><Link href="/our-teachers" className="hover:text-brand">Science Teachers</Link></li>
+              <li><Link href="/our-teachers" className="hover:text-brand">History Teachers</Link></li>
             </ul>
           </div>
           <div>

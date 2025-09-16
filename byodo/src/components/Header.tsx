@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -9,15 +10,15 @@ export default function Header() {
         </div>
         <nav aria-label="Primary" className="hidden md:block">
           <ul className="flex items-center gap-6 text-sm">
-            <li><a className="text-brand hover:text-brand-800 font-medium" href="/">Home</a></li>
-            <li><a className="text-brand hover:text-brand-800 font-medium" href="/our-teachers">Our Teachers</a></li>
-            <li><a className="text-brand hover:text-brand-800 font-medium" href="/about">About</a></li>
-            <li><a className="text-brand hover:text-brand-800 font-medium" href="/contact">Contact</a></li>
+            <li><Link className="text-brand hover:text-brand-800 font-medium" href="/">Home</Link></li>
+            <li><Link className="text-brand hover:text-brand-800 font-medium" href="/our-teachers">Our Teachers</Link></li>
+            <li><Link className="text-brand hover:text-brand-800 font-medium" href="/about">About</Link></li>
+            <li><Link className="text-brand hover:text-brand-800 font-medium" href="/contact">Contact</Link></li>
           </ul>
         </nav>
-        <a href="/#signup" className="inline-flex items-center justify-center rounded-full bg-brand text-white px-4 h-10 text-sm font-medium hover:bg-brand-700">
+        <Link href="/#signup" className="inline-flex items-center justify-center rounded-full bg-brand text-white px-4 h-10 text-sm font-medium hover:bg-brand-700">
           Find a Tutor
-        </a>
+        </Link>
       </div>
     </header>
   );
