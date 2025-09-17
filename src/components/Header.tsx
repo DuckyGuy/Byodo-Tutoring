@@ -16,7 +16,7 @@ export default function Header() {
             <li><Link className="text-brand hover:text-brand-800 font-medium" href="/contact">Contact</Link></li>
           </ul>
         </nav>
-        <Link href="/#signup" className="inline-flex items-center justify-center rounded-full bg-brand text-white px-4 h-10 text-sm font-medium hover:bg-brand-700">
+        <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-brand text-white px-4 h-10 text-sm font-medium hover:bg-brand-700">
           Find a Tutor
         </Link>
       </div>

@@ -120,7 +120,7 @@ export default function AboutPage() {
           <div className="mt-12 text-center">
             <p className="text-slate-700">Choose a teacher for 1-on-1 lessons</p>
             <Link
-              href="/#signup"
+              href="/contact"
               className="mt-4 inline-flex items-center justify-center rounded-full bg-brand text-white px-5 h-11 text-sm font-semibold hover:bg-brand-700"
             >
               Start learning with Byodo today!

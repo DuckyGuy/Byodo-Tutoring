@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import Parallax from "@/components/Parallax";
 import Header from "@/components/Header";
@@ -33,9 +34,9 @@ export default function Home() {
               Free, high‑quality 1:1 help, worksheets, and personalized lessons for every learner.
             </p>
             <div className="mt-8 flex items-center justify-center lg:justify-start gap-3">
-              <a href="#signup" className="inline-flex items-center justify-center rounded-full bg-brand text-white px-5 h-12 text-sm sm:text-base font-semibold hover:bg-brand-700">
+              <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-brand text-white px-5 h-12 text-sm sm:text-base font-semibold hover:bg-brand-700">
                 Start Learning
-              </a>
+              </Link>
               <a href="#how" className="inline-flex items-center justify-center rounded-full border border-white/30 text-white px-5 h-12 text-sm sm:text-base font-semibold hover:bg-white/10">
                 How it works
               </a>
@@ -93,7 +94,7 @@ export default function Home() {
           <h2 id="teachers-title" className="text-2xl sm:text-3xl font-bold text-slate-900">Our Teachers</h2>
           <p className="mt-2 max-w-2xl text-slate-700">Choose a teacher for 1‑on‑1 lessons. Start learning with Byodo today!</p>
           <div className="mt-6">
-            <a href="#signup" className="inline-flex items-center justify-center rounded-full bg-brand text-white px-5 h-11 text-sm font-semibold hover:bg-brand-700">Find a Tutor</a>
+            <Link href="/contact" className="inline-flex items-center justify-center rounded-full bg-brand text-white px-5 h-11 text-sm font-semibold hover:bg-brand-700">Find a Tutor</Link>
           </div>
         </section>
 
@@ -140,7 +141,7 @@ export default function Home() {
               <p className="mt-2 max-w-2xl text-slate-700">We offer the best tutors to help your student achieve their goals. We want you to succeed and will do everything we can to make that happen.</p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a href="#teachers" className="inline-flex items-center justify-center rounded-full border border-brand/30 text-brand px-5 h-11 text-sm font-semibold hover:bg-brand/10">Read More</a>
-                <a id="signup" href="#contact" className="inline-flex items-center justify-center rounded-full bg-brand text-white px-5 h-11 text-sm font-semibold hover:bg-brand-700">Sign Up</a>
+                <Link id="signup" href="/contact" className="inline-flex items-center justify-center rounded-full bg-brand text-white px-5 h-11 text-sm font-semibold hover:bg-brand-700">Sign Up</Link>
               </div>
             </div>
             <Reveal className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border border-slate-200 bg-white">
